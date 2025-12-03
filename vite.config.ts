@@ -3,14 +3,25 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
- 
+  // 🔥 IMPORTANT : base dynamique
+  // En local : "/"
+  // En production : "/portfolio/"
+  base: mode === "production" ? "/portfolio/" : "/",
+
+  plugins: [
+    react(),
+    mode === "development" && componentTagger()
+  ].filter(Boolean),
+
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+
+  server: {
+    open: true,
+    port: 5173,
   },
 }));
