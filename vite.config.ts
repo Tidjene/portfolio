@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  // 🔥 IMPORTANT : base dynamique/
+  // 🔥 IMPORTANT : base  dynamique/
   // En local : "/"
   // En production : "/portfolio/"
  // base: mode === "production" ? "/portfolio/" : "/",
