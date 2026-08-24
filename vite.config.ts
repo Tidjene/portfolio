@@ -4,11 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: '/portfolio/',
-  // 🔥 IMPORTANT : base  dynamique/
-  // En local : "/"
-  // En production : "/portfolio/"
- // base: mode === "production" ? "/portfolio/" : "/",
+  base: mode === "production" ? "/portfolio/" : "/",
 
   plugins: [
     react(),
@@ -20,7 +16,7 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/',
+
   server: {
     open: true,
     port: 5173,
