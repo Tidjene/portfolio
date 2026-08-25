@@ -5,7 +5,7 @@ import heroImage from "@/assets/hero-cyber.jpg";
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
-  const fullText = "tidjene-ouedraogo@supcom-student:~$ ./portfolio.sh";
+  const fullText = "tidjene-ouedraogo@specialiste-cyber:~$ ./portfolio.sh";
 
   useEffect(() => {
     let currentIndex = 0;

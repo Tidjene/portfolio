@@ -1,13 +1,24 @@
-import { Github, Linkedin, Mail, FileText } from "lucide-react";
+import { Github, Linkedin, Mail, FileText, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+const TikTokIcon = ({ className }: { className?: string }) => (
+  <svg
+    className={className}
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
+    <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 2.503 6.38 6.38 0 0 0 .616 8.272 6.387 6.387 0 0 0 8.232.551 6.323 6.323 0 0 0 2.072-3.158V9.117a8.214 8.214 0 0 0 4.707 1.488V7.12a4.793 4.793 0 0 1-1.002-.434z" />
+  </svg>
+);
 
 const Contact = () => {
   const contactLinks = [
     {
-      icon: Github,
-      label: "GitHub",
-      href: "https://github.com/Tidjene",
-      color: "hover:text-primary"
+    icon: Facebook,
+    label: "Facebook",
+    href: "https://www.facebook.com/tidjeneodg", // Remplace par ton lien Facebook
+    color: "hover:text-blue-500"
     },
     {
       icon: Linkedin,
@@ -22,11 +33,11 @@ const Contact = () => {
       color: "hover:text-primary"
     },
     {
-      icon: FileText,
-      label: "CV",
-      href: "CV_Cybersécurité.pdf",
-      color: "hover:text-secondary"
-    }
+    icon: TikTokIcon, // Ou l'icône personnalisée TikTok
+    label: "TikTok",
+    href: "https://www.tiktok.com/@tidjene.odg", // Remplace par ton lien TikTok
+    color: "hover:text-pink-500"
+  }
   ];
 
   return (

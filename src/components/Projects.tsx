@@ -5,22 +5,28 @@ import { Button } from "@/components/ui/button";
 const Projects = () => {
   const projects = [
     {
+      title: "PESAT",
+      description: "Plateforme des étudiants et stagiaires africains en Tunisie",
+      tags: ["Intégration", "Mentoring", "Partage d'information"],
+      github: "https://pesat.tn"
+    },
+    {
+      title: "Conception d'un pipeline CI/CD muni de fonctions de détection de rootkits exploitant eBPF",
+      description: "Innovation architecturale apportée au niveau du pipeline CI/CD classique",
+      tags: ["eBPF", "rootkis", "kernel linux", "Détection"],
+      github: "#"
+    },
+    {
       title: "Sandbox pour l’analyse des APTs avec IA",
       description: "Construction d'un laboratoire isolé pour émuler de façon défensive des techniques APT",
       tags: ["Python", "Pfsense", "LLM", "Wazuh", "Virtualbox"],
       github: "#"
     },
     {
-      title: "Détection et atténuation d'attaques DDoS dans un réseau haut débit",
-      description: "Surveillance, identification et atténuation d’attaques DDoS au sein de réseaux à haut débit.",
-      tags: ["Hping3", "Slowloris", "Grafana + Prometheus", "Suricata"],
-      github: "#"
-    },
-    {
       title: "CTF Writeups",
       description: "Collection de writeups détaillés de challenges CTF résolus avec explications des techniques utilisées",
       tags: ["CTF", "Pentesting", "Documentation", "Learning"],
-      github: "https://github.com/Tidjene/"
+      github: "https://github.com/Tidjene/CTF-Writeups"
     },
     {
       title: "Pipeline CI/CD DevSecOps",

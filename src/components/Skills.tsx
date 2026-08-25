@@ -3,31 +3,30 @@ import { Badge } from "@/components/ui/badge";
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Systèmes d'exploitation",
-      skills: ["Kali Linux", "Parrot OS", "Ubuntu", "Arch Linux", "Debian", "Windows Server"]
+      title: "Sécurité Système & Kernel",
+      skills: ["Kali Linux", "Debian", "Ubuntu", "eBPF Rootkit Detection", "Seccomp", "Stunnel (TLS 1.3)", "Windows Server"]
     },
     {
-      title: "Outils de Pentesting",
-      skills: ["Metasploit", "Burp Suite", "Nmap", "Wireshark", "Aircrack-ng", "John the Ripper", "sqlmap", "Hydra"]
+      title: "SOC, SIEM & Monitoring (Blue Team)",
+      skills: ["Wazuh", "Splunk", "ELK Stack", "Falco / Falcosidekick", "Snort", "Suricata", "Analyse de logs"]
     },
     {
-      title: "Langages & Scripting",
-      skills: ["Python", "Bash", "PowerShell"]
+      title: "Pentesting & Audits (Red Team)",
+      skills: ["Metasploit", "Burp Suite", "Nmap", "Wireshark", "John the Ripper", "sqlmap", "Hydra", "Aircrack-ng"]
     },
     {
-      title: "Sécurité Réseau",
-      skills: ["TCP/IP", "VPN", "IDS/IPS", "Firewalls", "SIEM", "Packet Analysis"]
+      title: "Sécurité Web & APIs",
+      skills: ["OWASP Top 10", "Injection SQL", "XSS", "CSRF", "API Security", "JWT", "FastAPI"]
     },
     {
-      title: "Web Security",
-      skills: ["OWASP Top 10", "XSS", "SQL Injection", "CSRF", "API Security", "JWT"]
+      title: "Sécurité Réseau & Infrastructure",
+      skills: ["TCP/IP", "Wireshark / Packet Analysis", "Firewalls", "VPN", "IDS/IPS", "Architecture Réseau"]
     },
     {
-      title: "Outils & Frameworks",
-      skills: ["Docker", "Git", "Splunk", "ELK Stack", "Wazuh", "Snort", "Suricata"]
+      title: "DevSecOps, Cloud & Scripting",
+      skills: ["Python", "Bash", "PowerShell", "Docker", "Kubernetes", "CI/CD Security (GitHub Actions)", "Git", "MySQL"]
     }
   ];
-
   return (
     <section id="skills" className="py-20 px-4 relative">
       <div className="container mx-auto max-w-6xl">
@@ -64,31 +63,62 @@ const Skills = () => {
 
         
         <div className="mt-12 bg-card/50 backdrop-blur-sm border border-primary/30 rounded-lg p-4 md:p-6 box-glow overflow-x-auto">
-          <div className="font-mono space-y-2 text-xs md:text-sm">
-            {/* Remplacez YOUR_USER_ID par votre ID utilisateur TryHackMe */}
-            Fetching TryHackMe ranking...
-            <br />
-            <br />
-              <iframe 
-                src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=1729983"
-               
-                title="TryHackMe Ranking"
-                loading="lazy"
-              />
-          </div>
-        </div>
+  <div className="font-mono space-y-4 text-xs md:text-sm">
+    {/* Commande Shell simulée */}
+    <div className="flex items-center space-x-2">
+      <span className="text-primary">$</span>
+      <span className="text-foreground">curl -s https://tryhackme.com/api/v2/badges/public-profile?userPublicId=1729983</span>
+    </div>
+
+    {/* Statut de chargement / Réponse */}
+    <div className="text-muted-foreground text-xs">
+      [+] HTTP 200 OK — Badge TryHackMe récupéré avec succès
+    </div>
+
+    {/* Badge TryHackMe centré */}
+    <div className="pt-2 flex justify-center">
+      <iframe 
+        src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=1729983"
+        title="Badge TryHackMe"
+        loading="lazy"
+        className="w-[340px] h-[90px] border-0 rounded overflow-hidden"
+      />
+    </div>
+  </div>
+</div>
 
         {/* Terminal-like experience section */}
-        <div className="mt-12 bg-card/50 backdrop-blur-sm border border-primary/30 rounded-lg p-4 md:p-6 box-glow overflow-x-auto">
-          <div className="font-mono space-y-2 text-xs md:text-sm">
-            <div className="text-primary mt-4 whitespace-nowrap">$ echo $CERTIFICATIONS</div>
-            <div className="text-muted-foreground pl-2 md:pl-4 break-words">
-              <div> Google Cybersecurity Certificate - Coursera</div>
-              <div> Ethical Hacker - Cisco</div>
-              <div>En cours de préparation : HCIA, RHCSA, CyberOps</div>
-            </div>
+{/* Terminal-like experience section */}
+<div className="mt-12 bg-card/50 backdrop-blur-sm border border-primary/30 rounded-lg p-4 md:p-6 box-glow overflow-x-auto">
+  <div className="font-mono space-y-2 text-xs md:text-sm">
+    <div className="text-primary whitespace-nowrap">
+      $ cat ~/.certifications.json | jq .
+    </div>
+    
+    <div className="text-muted-foreground pl-2 md:pl-4">
+      <span className="text-amber-400 font-semibold">&#123;</span>
+      <div className="pl-4">
+        <span className="text-blue-400">"completed"</span>: [
+          <div className="pl-4 text-emerald-400">
+            "Google Cybersecurity Certificate (Coursera)",
           </div>
-        </div>
+          <div className="pl-4 text-emerald-400">
+            "Ethical Hacker (Cisco)"
+          </div>
+        ],
+        <span className="text-blue-400">"in_progress"</span>: [
+          <div className="pl-4 text-yellow-400">
+            "RHCSA (Red Hat Certified System Administrator)",
+          </div>
+          <div className="pl-4 text-yellow-400">
+            "CPTS (HackTheBox Certified Penetration Testing Specialist )"
+          </div>
+        ]
+      </div>
+      <span className="text-amber-400 font-semibold">&#125;</span>
+    </div>
+  </div>
+</div>
       </div>
     </section>
   );
