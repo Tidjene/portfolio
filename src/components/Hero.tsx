@@ -66,7 +66,7 @@ const Hero = () => {
               <div className="w-40 h-40 rounded-full border-4 border-primary/50 box-glow overflow-hidden bg-card/50 backdrop-blur-sm flex items-center justify-center">
                 {/* Remplacez /placeholder.svg par l'URL de votre photo */}
                 <img 
-                  src="/image.png" 
+                  src="/image.jpg" 
                   alt="Profile" 
                   className="w-full h-full object-cover"
                 />
