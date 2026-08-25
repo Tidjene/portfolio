@@ -24,7 +24,7 @@ const Contact = () => {
     {
       icon: FileText,
       label: "CV",
-      href: "CV_recherche_de_stage.pdf",
+      href: "CV_Cybersécurité.pdf",
       color: "hover:text-secondary"
     }
   ];
