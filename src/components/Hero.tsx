@@ -79,13 +79,13 @@ const Hero = () => {
 
           {/* Main title */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-6 animate-glow-pulse break-words">
-            CYBERSÉCURITÉ
+            PENTESTER
             <br />
-            <span className="text-primary text-glow-strong">OPÉRATIONNELLE</span>
+            <span className="text-primary text-glow-strong">SOC ANALYST</span>
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 font-mono px-4">
-            Fasciné du Shell & Passionné de Hacking Éthique
+            Penser comme l'attaquant pour mieux défendre : de l'analyse de vulnérabilités à la réponse aux incidents.
           </p>
 
           {/* CTA Buttons */}

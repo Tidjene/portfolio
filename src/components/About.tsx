@@ -6,7 +6,7 @@ const About = () => {
     {
       icon: Shield,
       title: "Sécurité Offensive",
-      description: "Pentesting, exploitation de vulnérabilités, CTF challenges"
+      description: "Pentest web & Active Directory, CTF challenges"
     },
     {
       icon: Terminal,
@@ -25,7 +25,7 @@ const About = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-primary text-glow">whoami</span>
+            <span className="text-primary text-glow">$ whoami</span>
           </h2>
           <div className="h-1 w-20 bg-primary mx-auto box-glow" />
         </div>
@@ -33,16 +33,10 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-6">
             <p className="text-lg leading-relaxed text-muted-foreground">
-              Titulaire d'un <span className="text-primary font-semibold">Master 2 en Cybersécurité Opérationnelle de SUP'COM Tunis</span>, 
-              je suis passionné de hacking éthique et de cybersécurité.
+              Titulaire d'un <span className="text-primary font-semibold">Master 2 en Cybersécurité Opérationnelle de SUP'COM Tunis</span>
             </p>
             <p className="text-lg leading-relaxed text-muted-foreground">
-              Ma curiosité pour Linux et les systèmes d'exploitation m'a conduit à approfondir 
-              mes compétences en pentesting, analyse de vulnérabilités et sécurité réseau.
-            </p>
-            <p className="text-lg leading-relaxed text-muted-foreground">
-              Toujours en quête d'apprentissage, je m'entraîne régulièrement sur des plateformes d'apprentissage 
-              en ligne comme TryHackMe, RootMe et HackTheBox.
+              En tant que <span className="text-primary font-semibold">CO-Founder & Security Lead sur PESAT</span>, j'assure la conduite des audits intrusifs (pentests), la rédaction de la PSSI et la mise en place du monitoring. J'identifie les vulnérabilités critiques et déploie des mesures correctives pour sécuriser les systèmes en production.
             </p>
           </div>
 
@@ -54,22 +48,13 @@ const About = () => {
       tidjene:x:1000:1000:Tidjene (Cybersecurity Specialist):/home/tidjene:/bin/bash
     </div>
 
-    {/* Groups / Roles */}
-    <div className="text-primary pt-2 whitespace-nowrap">$ id</div>
-    <div className="text-muted-foreground break-all">
-      uid=1000(tidjene) gid=1000(tidjene)
-    </div>
-    <div className="text-muted-foreground break-all">
-      groups=1000(tidjene),27(sudo),2026(open_to_work),404(soc_analyst),505(pentester)
-    </div>
-
     {/* Statut Recherche D'emploi */}
     <div className="text-primary pt-2 whitespace-nowrap">$ env | grep -E "STATUS|TARGET"</div>
     <div className="text-emerald-400 font-semibold break-all">
       JOB_SEARCH_STATUS=ACTIVE_LOOKING
     </div>
     <div className="text-muted-foreground break-all">
-      TARGET_ROLES="Junior SOC Analyst, Junior Pentester, DevSecOps"
+      TARGET_ROLES="SOC Analyst, Pentester"
     </div>   
   </div>
 </div>

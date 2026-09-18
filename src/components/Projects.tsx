@@ -5,33 +5,33 @@ import { Button } from "@/components/ui/button";
 const Projects = () => {
   const projects = [
     {
-      title: "PESAT",
-      description: "Plateforme des étudiants et stagiaires africains en Tunisie",
-      tags: ["Intégration", "Mentoring", "Partage d'information"],
+      title: "PESAT Platform - Lead Security & Co-Founder",
+      description: "Direction de la sécurité pour la plateforme communautaire PESAT. Conduite d'audits intrusifs (Pentest) en production ayant permis d'identifier et corriger +20 vulnérabilités critiques. Déploiement d'une infrastructure de surveillance continue des activités et rédaction de la politique de sécurité (PSSI) de l'organisation.",
+      tags: ["Pentest Prod", "PSSI & Gouvernance", "Monitoring", "Vulnerability Management", "Web Security"],
       github: "https://pesat.tn"
     },
     {
-      title: "Conception d'un pipeline CI/CD muni de fonctions de détection de rootkits exploitant eBPF",
-      description: "Innovation architecturale apportée au niveau du pipeline CI/CD classique",
-      tags: ["eBPF", "rootkis", "kernel linux", "Détection"],
+      title: "eBPF & Falco Kernel Security Pipeline",
+      description: "Architecture novatrice de sécurisation CI/CD axée sur la détection d'intrusions au niveau noyau (Kernel). Conception et écriture de +50 règles Falco personnalisées pour modéliser le comportement des rootkits Linux et bloquer les menaces en temps réel lors du build.",
+      tags: ["eBPF", "Falco (+65 règles)", "Linux Kernel", "Rootkit Detection", "DevSecOps", "CI/CD", "Seccomp"],
       github: "#"
     },
     {
-      title: "Sandbox pour l’analyse des APTs avec IA",
-      description: "Construction d'un laboratoire isolé pour émuler de façon défensive des techniques APT",
-      tags: ["Python", "Pfsense", "LLM", "Wazuh", "Virtualbox"],
+      title: "AI-Powered APT Detection Sandbox",
+      description: "Développement d'un environnement d'analyse de malwares isolé sous pfSense/VirtualBox. Implémentation d'un modèle Machine Learning Isolation Forest pour identifier les comportements anormaux et la présence d'APTs à partir des métriques système et réseau extraites.",
+      tags: ["Isolation Forest", "Machine Learning", "pfSense", "APT Analysis", "Wazuh SIEM", "Python", "Threat Hunting"],
       github: "#"
     },
     {
       title: "CTF Writeups",
-      description: "Collection de writeups détaillés de challenges CTF résolus avec explications des techniques utilisées",
-      tags: ["CTF", "Pentesting", "Documentation", "Learning"],
+      description: "Rédaction et publication de rapports d'audit et de writeups détaillés retraçant la résolution de challenges CTF. Structuration des étapes d'exploitation (OWASP, Active Directory, escalade de privilèges) et recommandations de remediation pour la communauté.",
+      tags: ["Rapports d'Audit", "Pentest Web", "Active Directory", "Privilege Escalation", "TryHackMe", "OWASP Top 10"],
       github: "https://github.com/Tidjene/CTF-Writeups"
     },
     {
       title: "Pipeline CI/CD DevSecOps",
-      description: "Pipeline pour automatiser le déploiement et sécuriser chaque étape du cycle de développement.",
-      tags: ["Bash", "Docker", "Kubernetes", "Tekton"],
+      description: "Mise en place d'un pipeline CI/CD automatisé et sécurisé pour le déploiement d'une application Web basée sur l'IA (architecture RAG). Orchestration d'un cluster Kubernetes appliquant les règles strictes de sécurité (RBAC, Network Policies, gestion des secrets et scanning d'images).",
+      tags: ["Kubernetes Hardening", "DevSecOps", "RAG / LLM", "CI/CD", "Docker", "Network Policies", "K8s Security"],
       github: "https://github.com/Tidjene/pipeline-configuration-file"
     }
   ];
